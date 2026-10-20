@@ -385,18 +385,18 @@ app.layout = html.Div(
                             children=[
                                 html.P(html.Strong("About This Page"), style={"marginBottom": "8px"}),
                                 html.P(
-                                    "This dashboard explores semantic similarity among CAMS Drivers and Reasons for Dying (RFD) using natural language processing (NLP). "
-                                    "The 3D visualization shows individual RFD and driver responses represented in 3D space. The bar chart shows the average within-person relationships between constructs. "
+                                    "This dashboard shows semantic similarity among CAMS Drivers and Reasons for Dying (RFD) using natural language processing (NLP). "
+                                    "The 3D plot shows individual RFD and driver responses in 3D space."
                                     "Use the model dropdown to compare a general-purpose embedding model (MPNet) against a mental-health-domain-specific model (MentalBERT), and the 'Color 3D points by' dropdown to see how the qualitative coding frameworks (applied to both Drivers and RFD text) align with the embedding space.",
                                     style={"marginBottom": "8px"},
                                 ),
                                 html.P(html.Strong("How to interpret it"), style={"marginBottom": "6px"}),
                                 html.Ul([
-                                    html.Li("Each point in the 3D plot represents one response (Driver or RFD)."),
-                                    html.Li("Points that appear closer together represent responses that are more similar in meaning."),
-                                    html.Li("The 3D axes are not directly interpretable units. They are a visualization of high-dimensional semantic relationships."),
-                                    html.Li("Every response was coded with BOTH the Drivers framework and the RFD framework, so you can color by either scheme regardless of response type."),
-                                    html.Li("Grey points are 'Uncoded' (no matching qualitative code)"),
+                                    html.Li("Each point in the plot represents one response (Driver or RFD)."),
+                                    html.Li("Points that are closer together represent responses with higher similarity."),
+                                    html.Li("The axes are not directly interpretable units. They are a 3D representation of high-dimensional semantic relationships."),
+                                    html.Li("Every response was coded with BOTH the Drivers framework and the RFD framework, so you can color by either coding framework."),
+                                    html.Li("Grey points are 'uncoded' (no matching qualitative code)"),
                                     html.Li("The participant-level bar chart shows average cosine similarity, where higher values indicate greater semantic overlap."),
                                 ], style={"paddingLeft": "20px", "marginTop": "0", "marginBottom": "0"}),
                             ],
